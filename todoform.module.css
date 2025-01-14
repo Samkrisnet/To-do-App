@@ -121,7 +121,7 @@
 
 @media (max-width: 360px) {
   .todoform {
-    width: 310px;
+    width: 300px;
     font-size: 5px;
     padding: 3px;
   }

@@ -221,7 +221,7 @@
 @media (max-width: 360px) {
   .footer {
     /* position: fixed; */
-    width: 320px;
+    width: 305px;
     font-size: 13px;
     padding: 5px;
     display: flex;
