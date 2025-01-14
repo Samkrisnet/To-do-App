@@ -1,0 +1,154 @@
+.item {
+  background-color: darkgrey;
+  color: rgb(78, 55, 55);
+  font-size: 17px;
+  margin: 0 auto;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 0 10px;
+  text-shadow: rgb(129, 192, 4);
+}
+
+.item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  border-radius: 50px;
+  height: 100%;
+  background: rgb(222, 230, 227);
+  z-index: -1;
+  transition: 3s;
+}
+.item:hover::before {
+  width: 100%;
+  opacity: 0.3%;
+}
+.itemName {
+  padding-top: 3px;
+}
+.deletebtn {
+  float: right;
+  margin-top: 7px;
+  cursor: pointer;
+}
+.seperator {
+  background-color: rgb(143, 218, 149);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* border: none; */
+}
+.completed {
+  text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+  .item {
+    font-size: 22px;
+  }
+  .item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    border-radius: 50px;
+    height: 100%;
+    background: rgb(113, 228, 103);
+    z-index: -1;
+    transition: 3s;
+  }
+  .item:hover::before {
+    width: 100%;
+    opacity: 0.5%;
+  }
+}
+@media (max-width: 570px) {
+  .item {
+    font-size: 18px;
+  }
+  .item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-radius: 50px;
+    height: 100%;
+    background: rgb(113, 228, 103);
+    z-index: -1;
+    transition: 3s;
+  }
+  .item:hover::before {
+    width: 100%;
+    opacity: 0.5%;
+  }
+}
+@media (max-width: 396px) {
+  .item {
+    font-size: 18px;
+  }
+  .item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    border-radius: 50px;
+    height: 100%;
+    background: rgb(113, 228, 103);
+    z-index: -1;
+    transition: 3s;
+  }
+  .item:hover::before {
+    width: 100%;
+    opacity: 0.5%;
+  }
+}
+
+@media (max-width: 380px) {
+  .item {
+    width: 310px;
+    font-size: 17px;
+  }
+  .item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    border-radius: 50px;
+    height: 100%;
+    background: rgb(113, 228, 103);
+    z-index: -1;
+    transition: 3s;
+  }
+  .item:hover::before {
+    width: 100%;
+    opacity: 0.5%;
+  }
+}
+
+@media (max-width: 360px) {
+  .item {
+    width: 280px;
+    font-size: 16px;
+  }
+  .item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    border-radius: 50px;
+    height: 100%;
+    background: rgb(113, 228, 103);
+    z-index: -1;
+    transition: 3s;
+  }
+  .item:hover::before {
+    width: 100%;
+    opacity: 0.5%;
+  }
+}
